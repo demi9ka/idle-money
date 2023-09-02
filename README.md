@@ -1,2 +1,2 @@
 # idle-money
-simle idle clicker for react
+simle idle clicker for react.js
