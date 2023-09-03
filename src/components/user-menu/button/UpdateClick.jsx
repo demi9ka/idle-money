@@ -1,8 +1,7 @@
 import { useContext } from "react";
 import { UserContext } from "../../../provider/UserContex";
 import styles from "../user-menu.module.css";
-
-export default () => {
+const UpdateClick = () => {
   const { data, setData } = useContext(UserContext);
   return (
     <button
@@ -28,3 +27,4 @@ export default () => {
     </button>
   );
 };
+export default UpdateClick;

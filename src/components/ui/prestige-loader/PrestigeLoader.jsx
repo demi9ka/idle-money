@@ -2,7 +2,7 @@ import { useContext } from "react";
 import styles from "./prestige-loader.module.css";
 import { UserContext } from "../../../provider/UserContex";
 
-export default () => {
+const PrestigeLoader = () => {
   const { data } = useContext(UserContext);
   return (
     <div className={styles.loader_wrapper}>
@@ -20,3 +20,4 @@ export default () => {
     </div>
   );
 };
+export default PrestigeLoader;

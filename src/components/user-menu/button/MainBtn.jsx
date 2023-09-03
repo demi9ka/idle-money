@@ -3,7 +3,7 @@ import { UserContext } from "../../../provider/UserContex";
 import styles from "../user-menu.module.css";
 import checkPrestige from "../../../script/checkPrestige";
 
-export default () => {
+const MainBtn = () => {
   const { data, setData } = useContext(UserContext);
   return (
     <button
@@ -21,3 +21,4 @@ export default () => {
     </button>
   );
 };
+export default MainBtn;
