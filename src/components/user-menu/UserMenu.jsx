@@ -2,11 +2,12 @@ import styles from "./user-menu.module.css";
 import MainBtn from "./button/MainBtn";
 import UpdateClick from "./button/UpdateClick";
 import UpdateAuto from "./button/UpdateAuto";
-import { useContext, useEffect, useState } from "react";
+import { useContext, useEffect } from "react";
 import { UserContext } from "../../provider/UserContex";
 import Prestige from "./button/Prestige.jsx";
 import checkPrestige from "../../script/checkPrestige";
-export default () => {
+
+const UserMenu = () => {
   const { setData } = useContext(UserContext);
 
   useEffect(() => {
@@ -26,8 +27,7 @@ export default () => {
     return () => {
       clearInterval(interval);
     };
-  }, []);
-  () => clearTimeout(timeout);
+  }, [setData]);
 
   return (
     <div className={styles.menu}>
@@ -38,3 +38,4 @@ export default () => {
     </div>
   );
 };
+export default UserMenu;

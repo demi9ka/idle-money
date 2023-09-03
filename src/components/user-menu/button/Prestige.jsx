@@ -3,7 +3,7 @@ import { useContext } from "react";
 import { UserContext } from "../../../provider/UserContex";
 import { default_user_data } from "../../../provider/UserContex";
 
-export default () => {
+const Prestige = () => {
   const { data, setData } = useContext(UserContext);
   return (
     <button
@@ -20,3 +20,4 @@ export default () => {
     </button>
   );
 };
+export default Prestige;

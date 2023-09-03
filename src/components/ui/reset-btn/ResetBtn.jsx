@@ -2,7 +2,7 @@ import styles from "./reset-btn.module.css";
 import { UserContext, default_user_data } from "../../../provider/UserContex";
 import { useContext } from "react";
 
-export default () => {
+const ResetBtn = () => {
   const { setData } = useContext(UserContext);
   return (
     <button
@@ -14,3 +14,4 @@ export default () => {
     </button>
   );
 };
+export default ResetBtn;
