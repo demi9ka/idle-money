@@ -10,13 +10,13 @@ const Prestige = () => {
       onClick={() => {
         setData({
           ...default_user_data,
-          prestige: data.prestige + data.prestige_local / 100,
+          prestige: data.prestige + data.prestige_local,
         });
       }}
       className={`${styles.btn} ${
         !data.prestige_local && styles.display_none
       } ${styles.prestige_btn} ${styles.active}`}>
-      Prestige (+{data.prestige_local}%)
+      Prestige (+{data.prestige_local.toFixed(1)}x)
     </button>
   );
 };

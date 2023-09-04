@@ -17,7 +17,7 @@ const prestige_data = {
   prestige_value: 1500,
   prestige_local: 0,
   prestige_multiplier: 1.5,
-  prestige_profit: 5,
+  prestige_profit: 0.5,
 };
 export const default_user_data = {
   ...user_data,
