@@ -15,7 +15,7 @@ const PrestigeLoader = () => {
               : 100
           }%`,
         }}>
-        {((data.money / data.prestige_value) * 100).toFixed(1)}%
+        {/* {((data.money / data.prestige_value) * 100).toFixed(1)}% */}
       </div>
     </div>
   );

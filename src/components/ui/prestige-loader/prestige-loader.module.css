@@ -7,7 +7,7 @@
 }
 .loader {
   position: relative;
-  height: 2px;
+  height: 4px;
   background-color: #8d9ff3;
   transition: 0.2s;
   width: var(--width);
@@ -15,6 +15,6 @@
   color: aliceblue;
   overflow: hidden;
 }
-.loader_wrapper:hover .loader {
+/* .loader_wrapper:hover .loader {
   height: 22px;
-}
+} */

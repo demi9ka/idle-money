@@ -1,36 +1,8 @@
-.wrapper {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-.info_block {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.money_count {
-  font-size: 70px;
-  font-family: "Courier New", Courier, monospace;
-  font-weight: 500;
-  color: #85e22e;
-  text-align: center;
-}
-.boost_wrapper {
-  display: flex;
-  align-items: center;
-}
-.prestige,
-.auto_profit {
-  color: #ebebeb;
-  padding: 4px 12px;
-  border-radius: 5px;
-  font-size: 20px;
-  margin: 0 5px;
-}
-.prestige {
-  background-color: #427deb;
-}
-.auto_profit {
-  background-color: #7240e6;
+.screen {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
 }
